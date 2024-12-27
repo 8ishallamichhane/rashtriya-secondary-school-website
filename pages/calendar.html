@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Calendar - High School Name</title>
+    
+    <!-- Same head content as index.html -->
+    <link rel="stylesheet" href="../css/calendar.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header>
+        <!-- ... navigation content ... -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/images/logo.png" alt="School Logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="campus-life.html">Campus Life</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>School Calendar</h1>
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> / School Calendar
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Section -->
+    <section class="calendar-section">
+        <div class="container">
+            <div class="calendar-filters">
+                <select id="monthSelect">
+                    <option value="">Select Month</option>
+                    <!-- JS will populate months -->
+                </select>
+                <select id="eventType">
+                    <option value="">All Events</option>
+                    <option value="academic">Academic</option>
+                    <option value="sports">Sports</option>
+                    <option value="cultural">Cultural</option>
+                    <option value="holiday">Holidays</option>
+                </select>
+            </div>
+
+            <div class="calendar-grid">
+                <!-- Calendar will be populated by JavaScript -->
+            </div>
+
+            <div class="upcoming-events">
+                <h2>Upcoming Events</h2>
+                <div class="event-list">
+                    <!-- Sample Events -->
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">MAR</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Parent-Teacher Conference</h3>
+                            <p><i class="far fa-clock"></i> 2:00 PM - 6:00 PM</p>
+                            <p><i class="fas fa-map-marker-alt"></i> School Auditorium</p>
+                        </div>
+                    </div>
+                    <!-- More event cards -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer>
+        <!-- ... footer content ... -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Shivaraj-05, Chandrauta</p>
+                <p>Kapilvastu, Lumbini Province, Nepal, 32814</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: info@rashtriyamavi.edu.np</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="calendar.html">School Calendar</a></li>
+                    <li><a href="portal.html">Student Portal</a></li>
+                    <li><a href="resources.html">Parent Resources</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Rashtriya Secondary School. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/calendar.js"></script>
+</body>
+</html> 
