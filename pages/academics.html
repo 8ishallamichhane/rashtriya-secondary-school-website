@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - Rashtriya Secondary School</title>
+    <!-- Same head content as other pages -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="../css/academics.css">
+    <link rel="stylesheet" href="../css/academic-calendar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header (Same as other pages) -->
+    <header>
+        <!-- Same navbar as other pages -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/images/logo.png" alt="School Logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html" class="active">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="campus-life.html">Campus Life</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Academics</h1>
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a> / Academics
+            </nav>
+        </div>
+    </section>
+
+    <!-- Academic Programs -->
+    <section class="academic-programs">
+        <div class="container">
+            <h2>Our Academic Programs</h2>
+            <div class="programs-grid">
+                <!-- Pre-Primary Level -->
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3>Pre-Primary Level</h3>
+                    <p>Comprehensive education for elementary children with focus on core subjects and practical learning.</p>
+                    <ul class="program-features">
+                        <li>Science and Mathematics</li>
+                        <li>Languages and Literature</li>
+                        <li>Social Studies</li>
+                        <li>Computer Science</li>
+                    </ul>
+                    <button class="view-details" data-program="secondary">View Details</button>
+                </div>
+
+                <!-- Primary Level -->
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Primary Level</h3>
+                    <p>Specialized streams for grades 1-8 preparing students for higher education.</p>
+                    <ul class="program-features">
+                        <li>Science Stream</li>
+                        <li>Management Stream</li>
+                        <li>Humanities Stream</li>
+                        <li>Computer Science</li>
+                    </ul>
+                    <button class="view-details" data-program="higher">View Details</button>
+                </div>
+<!-- Secondary Level -->
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Secondary</h3>
+                    <p>Specialized streams for grades 9-12 preparing students for higher education.</p>
+                    <ul class="program-features">
+                        <li>Science Stream</li>
+                        <li>Management Stream</li>
+                        <li>Humanities Stream</li>
+                        <li>Computer Science</li>
+                    </ul>
+                    <button class="view-details" data-program="higher">View Details</button>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Diploma</h3>
+                    <p>Specialized streams for Diplomapreparing students for higher education.</p>
+                    <ul class="program-features">
+                        <li>Science Stream</li>
+                        <li>Management Stream</li>
+                        <li>Humanities Stream</li>
+                        <li>Computer Science</li>
+                    </ul>
+                    <button class="view-details" data-program="higher">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Details Modal -->
+    <div class="modal" id="programModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Curriculum Overview -->
+    <section class="curriculum">
+        <div class="container">
+            <h2>Curriculum Overview</h2>
+            <div class="curriculum-tabs">
+                <button class="tab-btn active" data-tab="preprimary">Pre-Primary</button>
+                <button class="tab-btn" data-tab="primary">Primary</button>
+                <button class="tab-btn" data-tab="secondary">Secondary</button>
+                <button class="tab-btn" data-tab="temporary">Diploma</button>
+            </div>
+            <div class="tab-content">
+                <!-- Pre-Primary Level -->
+                <div class="tab-pane active" id="preprimary">
+                    <div class="subject-grid">
+                        <div class="subject-card">
+                            <div class="subject-icon">
+                                <i class="fas fa-shapes"></i>
+                            </div>
+                            <h3>Basic Learning</h3>
+                            <ul class="subject-topics">
+                                <li>Alphabets & Numbers</li>
+                                <li>Colors & Shapes</li>
+                                <li>Basic Writing</li>
+                            </ul>
+                        </div>
+                        <div class="subject-card">
+                            <div class="subject-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <h3>Creative Arts</h3>
+                            <ul class="subject-topics">
+                                <li>Drawing & Coloring</li>
+                                <li>Music & Movement</li>
+                                <li>Arts & Crafts</li>
+                            </ul>
+                        </div>
+                        <!-- Add more pre-primary subject cards as needed -->
+                    </div>
+                </div>
+
+                <!-- Primary Level -->
+                <div class="tab-pane" id="primary">
+                    <div class="subject-grid">
+                        <div class="subject-card">
+                            <div class="subject-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h3>Languages</h3>
+                            <ul class="subject-topics">
+                                <li>English</li>
+                                <li>Nepali</li>
+                                <li>Hindi</li>
+                            </ul>
+                        </div>
+                        <div class="subject-card">
+                            <div class="subject-icon">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <h3>Mathematics</h3>
+                            <ul class="subject-topics">
+                                <li>Basic Arithmetic</li>
+                                <li>Geometry</li>
+                                <li>Problem Solving</li>
+                            </ul>
+                        </div>
+                        <!-- Add more primary subject cards as needed -->
+                    </div>
+                </div>
+
+                <!-- Secondary Level -->
+                <div class="tab-pane" id="secondary">
+                    <div class="subject-grid">
+                        <div class="subject-card">
+                            <div class="subject-icon">
+                                <i class="fas fa-atom"></i>
+                            </div>
+                            <h3>Science</h3>
+                            <ul class="subject-topics">
+                                <li>Physics</li>
+                                <li>Chemistry</li>
+                                <li>Biology</li>
+                            </ul>
+                        </div>
+                        <div class="subject-card">
+                            <div class="subject-icon">
+                                <i class="fas fa-globe-asia"></i>
+                            </div>
+                            <h3>Social Studies</h3>
+                            <ul class="subject-topics">
+                                <li>History</li>
+                                <li>Geography</li>
+                                <li>Civics</li>
+                            </ul>
+                        </div>
+                        <!-- Add more secondary subject cards as needed -->
+                    </div>
+                </div>
+
+                <!-- Diploma Level -->
+                <div class="tab-pane" id="temporary">
+                    <div class="subject-grid">
+                        <div class="subject-card">
+                            <div class="subject-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3>Computer Science</h3>
+                            <ul class="subject-topics">
+                                <li>Programming</li>
+                                <li>Web Development</li>
+                                <li>Database</li>
+                            </ul>
+                        </div>
+                        <div class="subject-card">
+                            <div class="subject-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h3>Fine Arts</h3>
+                            <ul class="subject-topics">
+                                <li>Drawing</li>
+                                <li>Painting</li>
+                                <li>Sculpture</li>
+                            </ul>
+                        </div>
+                        <!-- Add more temporary subject cards as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Calendar -->
+    <section class="academic-calendar">
+        <div class="container">
+            <h2>Academic Calendar</h2>
+            <div class="calendar-wrapper">
+                <!-- Calendar content will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Links -->
+    <section class="academic-links">
+        <div class="container">
+            <div class="academic-grid">
+                <!-- Other academic cards -->
+                
+                <!-- Academic Calendar Card -->
+                <div class="academic-card">
+                    <div class="card-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Academic Calendar</h3>
+                    <p>View important dates, events, and schedules for the academic year.</p>
+                    <a href="calendar.html" class="card-link">View Calendar <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- Other academic cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as other pages) -->
+    <footer>
+        <!-- Same footer content -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Shivaraj-05, Chandrauta</p>
+                <p>Kapilvastu, Lumbini Province, Nepal</p>
+                <p>Phone: (+977) 76-540002</p>
+                <p>Email: info@rashtriyamavi.edu.np</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="calendar.html">School Calendar</a></li>
+                    <!-- <li><a href="portal.html">Student Portal</a></li> -->
+                    <li><a href="resources.html">Parent Resources</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Rashtriya Secondary School. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/academics.js"></script>
+</body>
+</html> 
