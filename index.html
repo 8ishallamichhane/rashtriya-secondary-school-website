@@ -15,6 +15,7 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/news-events.css">
     <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
     <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px) and (max-width: 1023px)">
     <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1024px)">
@@ -185,6 +186,21 @@
             </div>
         </div>
     </section>
+    <!-- News Modal -->
+    <div class="news-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <div class="modal-date"></div>
+                <h2 class="modal-title"></h2>
+            </div>
+            <div class="modal-body">
+                <img class="modal-image" src="" alt="">
+                <div class="modal-description"></div>
+                <div class="modal-details"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -193,16 +209,16 @@
                 <h4>Contact Us</h4>
                 <p>Shivaraj-05, Chandrauta</p>
                 <p>Kapilvastu, Lumbini Province, Nepal, 32814</p>
-                <p>Phone: (123) 456-7890</p>
+                <p>Phone: (+977) 76-540002</p>
                 <p>Email: info@rashtriyamavi.edu.np</p>
             </div>
             <div class="footer-section">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="calendar.html">School Calendar</a></li>
-                    <li><a href="portal.html">Student Portal</a></li>
-                    <li><a href="resources.html">Parent Resources</a></li>
-                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="pages/calendar.html">School Calendar</a></li>
+                    <!-- <li><a href="pages/portal.html">Student Portal</a></li> -->
+                    <li><a href="pages/resources.html">Parent Resources</a></li>
+                    <li><a href="pages/careers.html">Careers</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -221,6 +237,10 @@
     </footer>
 
     <!-- JavaScript Files -->
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
     <script src="js/main.js"></script>
     <script src="js/news-events.js"></script>
     <script src="js/notice.js"></script>
